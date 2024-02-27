@@ -2,6 +2,16 @@
   "name": "atom-engine",
   "type": "module",
   "version": "0.0.1",
+  "private": true,
+  "license": "ISC",
+  "author": "We-read-minds",
+  "repository": {
+    "url": "git+https://github.com/we-read-minds/atom-engine"
+  },
+  "bugs": {
+    "url": "https://github.com/we-read-minds/atom-engine/issues",
+    "email": "jacobello2000@outlook.com"
+  },
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
@@ -10,8 +20,14 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^4.4.5",
     "@astrojs/check": "^0.5.6",
+    "astro": "^4.4.5",
     "typescript": "^5.3.3"
+  },
+  "eslintConfig": {
+    "extends": "./node_modules/standard/eslintrc.json"
+  },
+  "devDependencies": {
+    "standard": "^17.1.0"
   }
 }
